@@ -1,0 +1,52 @@
+.starBox {
+  width: 10%;
+  height: 80%;
+}
+
+.starBox:hover {
+  cursor: pointer;
+}
+
+.yellowStar {
+  -webkit-transform: translateY(-25px) !important;
+          transform: translateY(-25px) !important;
+}
+
+.yellowStar .ray {
+  visibility: hidden;
+  -webkit-animation: tick 0.5s ease-in;
+          animation: tick 0.5s ease-in;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+@-webkit-keyframes tick {
+  0% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes tick {
+  0% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.blackStar {
+  color: rgba(0, 0, 0, 0.185);
+  -webkit-transform: translate(2px, -25px);
+          transform: translate(2px, -25px);
+}
+/*# sourceMappingURL=StarBox.css.map */

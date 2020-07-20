@@ -1,0 +1,58 @@
+.hoveringWorkspaceOuterContainer {
+    position: absolute;
+    left: 50px;
+    bottom: 300px;
+    width: 30vw;
+}
+
+.hoveringWorkspaceCommon {
+    position: absolute;
+    width: 100%;
+}
+
+#hoveringWorkspaceOne {
+    z-index: 102;
+    top: -6vh;
+    animation: hover 2.5s ease infinite;
+    animation-delay: -0.45s;
+}
+
+#hoveringWorkspaceTwo {
+    z-index: 101;
+    top: -3vh;
+    animation: hover 2.5s ease infinite;
+    animation-delay: -0.25s;
+}
+
+#hoveringWorkspaceThree {
+    z-index: 100;
+    top: 0;
+    animation: hover 2.5s ease infinite;
+    animation-delay: -0.65s;
+}
+
+@keyframes hover {
+    0% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.15, 0.41, 0.56, 1.04);
+    }
+
+    25% {
+        transform: translateY(-6.25px);
+        animation-timing-function: cubic-bezier(.51, -.05, .85, .82);
+    }
+
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.15, 0.41, 0.56, 1.04);
+    }
+
+    75% {
+        transform: translateY(6.25px);
+        animation-timing-function: cubic-bezier(.51, -.05, .85, .82);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

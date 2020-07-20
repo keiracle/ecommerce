@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC,YAAY,CAAC;EACzB,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,WAAW;EACvB,QAAQ,EAAE,MAAM;CACjB;;AAED,AAAA,aAAa,CAAC,YAAY,CAAC,EAAE,CAAC;EAC5B,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "IntroCarousel.scss"
+    ],
+    "names": [],
+    "file": "IntroCarousel.css"
+}

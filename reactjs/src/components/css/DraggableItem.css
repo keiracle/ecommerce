@@ -1,0 +1,80 @@
+.animated, .placeholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 80%;
+  height: 50px;
+  overflow: visible;
+  pointer-events: auto;
+  -webkit-transform-origin: 50% 50% 0px;
+          transform-origin: 50% 50% 0px;
+  border-radius: 5px;
+  color: white;
+  line-height: 90px;
+  font-size: 14.5px;
+  background: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.placeholder {
+  position: relative;
+  pointer-events: none;
+  line-height: 0;
+  background: transparent;
+  margin: 10px;
+}
+
+.draggableZone {
+  float: right;
+  width: 20%;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  background-color: #e44848;
+  cursor: -webkit-grab;
+  cursor: grab;
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+
+.draggableZone::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  border-radius: 0 5px 5px 0;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.name {
+  width: 100%;
+  margin-right: 50px;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  color: black;
+  cursor: default;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=DraggableItem.css.map */

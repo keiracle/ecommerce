@@ -1,0 +1,58 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.logo img {
+  width: 70px;
+  margin-right: 10px;
+  fill: #fdfdfd;
+}
+
+.logo-quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo-quote p {
+  color: white;
+  font-family: "Nova Mono", monospace;
+}
+
+.logo-quote div {
+  color: #f44292;
+}
+
+.nav-link-self::after {
+  content: "";
+  background-color: transparent;
+  display: block;
+  border-bottom: 1px solid white;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-link-self:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.active::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=NavBar.css.map */

@@ -1,0 +1,58 @@
+.information-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    padding: 20px;
+    transition: .2s ease-in;
+
+    &>svg {
+        width: 50px;
+        margin: 10px;
+        transition: .2s ease-in;
+    }
+
+    &>h3 {
+        font-size: 1.2rem;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    &>p {
+        text-align: center;
+    }
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, .2);
+
+        &>svg {
+            animation: shake .2s linear;
+        }
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    25% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+        transform: scale(1.3);
+    }
+}

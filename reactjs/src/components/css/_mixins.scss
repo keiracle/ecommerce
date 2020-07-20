@@ -1,0 +1,8 @@
+@import './variables';
+
+@mixin flexCenter($direction : row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: $direction;
+}

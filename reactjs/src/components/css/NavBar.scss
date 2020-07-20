@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  margin-top: 5px;
+
+  img {
+    width: 70px;
+    margin-right: 10px;
+    fill: #fdfdfd;
+  }
+}
+
+.logo-quote {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    color: white;
+    font-family: "Nova Mono", monospace;
+  }
+
+  div {
+    color: #f44292;
+  }
+}
+
+.nav-link-self {
+  &::after {
+    content: "";
+    background-color: transparent;
+    display: block;
+    border-bottom: 1px solid white;
+    transform: scale(0);
+    transition: 0.2s ease-in-out;
+  }
+
+  &:hover:after {
+    transform: scale(1);
+  }
+}
+
+.active {
+  &::after {
+    transform: scale(1);
+  }
+}
